@@ -6,14 +6,7 @@ fun main() {
         when (readLine()?.uppercase()) {
             "Y" -> {
                 val car = Car()
-                print("Enter Car Name: ")
-                car.name = readLine()!!
-                print("Enter Car Model: ")
-                car.model = readLine()!!
-                print("Enter Number Of Car Doors: " )
-                car.doors = readLine()!!.toInt()
-                print("Enter Car Price: ")
-                car.price = readLine()!!.toInt()
+                car.create()
                 carsList.add(car)
             }
             "N" -> isContinue = false
